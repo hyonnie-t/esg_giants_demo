@@ -72,6 +72,7 @@ function topCards(alloc) {
 /* ---------- 시작 화면 ---------- */
 function renderStart() {
   clear();
+  app.insertAdjacentHTML('beforeend', '<figure class="cover-banner"><img src="cover.webp" width="1200" height="671" alt="" decoding="async"></figure>');
   app.appendChild(h('h1', null, ['롯데 자이언츠의 마지막 우승은 1992년이야. 지금 구단에 개선에 쓸 예산 100이 생겼다고 해 보자. 어디에 쓸래?']));
   app.appendChild(h('p', { class: 'note' }, ['여기 나오는 예산과 개선안은 전부 가상이야. 실제 구단 상황이 아니야.']));
   var chips = h('div', { class: 'chips' });
