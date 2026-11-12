@@ -1,11 +1,12 @@
 # esg_giants_demo — ESG 예산 배분 시연
 
-대학원 수업 발표용 시연 웹앱(정적 4파일, 백엔드 없음). 중3이 가상 예산 100을 카드 12장에 나눠 쓰고 3회차 판단 변화를 본다. 교사 화면은 `?teacher=1`.
+대학원 수업 발표용 시연 웹앱(정적 파일, 백엔드 없음). 중3이 가상 예산 100을 카드 12장에 나눠 쓰고 3회차 판단 변화를 본다. 교사 화면은 `?teacher=1`.
 배포: https://hyonnie-t.github.io/esg_giants_demo/ (GitHub Pages, public)
 
 ## 구조
-- `index.html` / `style.css` / `data.js`(카드 12장·영역 풀이) / `app.js`(학생 화면 + `TEACHER-ONLY` 블록)
+- `index.html` / `style.css` / `data.js`(카드 12장·영역 풀이) / `app.js`(학생 화면 + `TEACHER-ONLY` 블록) / `cover.webp`·`og-cover.jpg`(표지·공유 그림)
 - 저장은 localStorage만(전부 try/catch). 이름·학번 입력 없음.
+- 캐시 버전(`?v=`)을 붙이지 않는다: 발표 시연용이라 고칠 일이 드물어 그대로 둔다(2026-11-12 점검 R24). 시연 직전에 고치면 강력 새로고침으로 확인한다.
 
 ## 규칙
 - 카드 문구·분류는 바꾸지 않는다. 배분 화면(`renderAlloc`)은 `area`를 읽지 않는다.
